@@ -1,0 +1,28 @@
+<div id="login" layout="row">
+    <div class="login_sidebar" layout="row" layout-align="center center">
+        <img src="content/img/Logo_header.png" ui-sref="home" alt="">
+    </div>
+    <div class="login_block">
+        <div class="form_block" layout="column" layout-align="center center">
+            <h2>Login</h2>
+            <form class="form_login" name="loginForm" novalidate>
+
+                <md-input-container class="md-block" md-no-float>
+                    <input type="text" name="name" placeholder="Name" md-autofocus ng-model="vm.form.name">
+                </md-input-container>
+
+                <md-input-container class="md-block" md-no-float>
+                    <input type="password" name="password" placeholder="Password" ng-model="vm.form.password">
+                </md-input-container>
+
+                <div>
+                    <button ng-click=""
+                            ng-disabled="loginForm.$invalid || loginForm.$pristine"
+                            class="main_button primary">
+                        Login
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

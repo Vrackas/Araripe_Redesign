@@ -1,0 +1,119 @@
+//templates
+@import "templates/homepage/homepage";
+@import "templates/e-commerce/e-commerce";
+@import "templates/technology/technology";
+@import "templates/merchant_account/merchant_account";
+@import "templates/merchant_acquiring/merchant_acquiring";
+@import "templates/payment_processing/payment_processing";
+@import "templates/card_issuing/card_issuing";
+@import "templates/about/about";
+@import "templates/contact/contact";
+@import "templates/terms/terms";
+@import "templates/cookie/cookie";
+@import "templates/privacy/privacy";
+@import "templates/prices/prices";
+@import "templates/login/login";
+
+
+//directives
+@import "directives/header_block/header_block";
+@import "directives/footer_block/footer_block";
+@import "directives/top_button/top_button";
+@import "directives/logo_block/logo_block";
+@import "directives/solution_block/solution_block";
+@import "directives/benefits_block/benefits_block";
+@import "directives/contact_form/contact_form";
+
+
+//componets
+body{
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.42857;
+  color: #384656;
+}
+
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+a,
+button{
+  cursor: pointer;
+}
+
+select:focus,
+a:focus,
+button:focus {
+  outline: none;
+}
+
+.main_button {
+  border: none;
+  box-sizing: border-box;
+  padding: 12px 24px 11px;
+  border-radius: 18px;
+  display: inline-block;
+  background-color: rgba(241, 96, 110, 0.08);
+  transition: background-color ease 0.4s;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 13px;
+  color: #f8325c;
+  cursor: pointer;
+  text-align: center;
+  &.primary {
+    background-color:rgba(255, 55, 80, 1);
+    color: #fff;
+  }
+
+}
+.main_button:hover{
+  background-color: rgba(241, 96, 110, 0.17);
+  &.primary {
+    background-color:rgba(255, 55, 80, 0.55); ;
+
+  }
+}
+
+.container {
+  margin: 0 auto;
+}
+
+@media (min-width: 1500px){
+  .container {
+    width: 1440px;
+  }
+}
+
+@media (min-width: 1200px)  and (max-width: 1500px)  {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 768px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 310px;
+  }
+}

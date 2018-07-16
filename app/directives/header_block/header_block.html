@@ -1,0 +1,96 @@
+<header id="header_site">
+    <div class="container">
+        <div class="header_site_content">
+            <div class="header_site_content_logo">
+                <a ui-sref="home" class="main-title"><img
+                        src="content/img/Logo_header.png" alt=""></a>
+            </div>
+            <div class="header_site_content_menu">
+                <ul>
+
+                        <!--<ul class="solutions_list">-->
+                            <!--<li><a ui-sref="merchant_account">iscopay core</a></li>-->
+                            <!--<li><a ui-sref="merchant_acquiring">iscopay expert</a></li>-->
+                            <!--&lt;!&ndash;<li><a ui-sref="payment_processing">iscopay stream</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a ui-sref="card_issuing">iscopay smart</a></li>&ndash;&gt;-->
+                        <!--</ul>-->
+
+                    <li><a ui-sref="about">{{ 'about_us' | translate }}</a></li>
+                    <li><a ui-sref="prices">{{ 'prices' | translate }}</a></li>
+                    <li><a ui-sref="technology">{{ 'technology' | translate }}</a></li>
+                    <li><a ui-sref="contact">{{ 'contact_us' | translate }}</a></li>
+                    <li ng-click="vm.langOpen('.lang_list')"><span>{{ 'language' | translate }}</span>
+                        <ul class="lang_list" layout="column">
+                            <li><span ng-click="vm.changeLang('en')">EN</span></li>
+                            <li><span ng-click="vm.changeLang('ru')">RUS</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="header_site_content_button">
+                <div>
+                    <!--<button class="main_button">Become a partner</button>-->
+                    <button class="main_button primary" ui-sref="login">{{ 'get_started' | translate }}</button>
+                </div>
+            </div>
+            <!--<div class="header_site_content_social">-->
+                <!--<div layout="row" layout-align="space-between center">-->
+                    <!--<button class="main_button"><i class="fab fa-linkedin-in"></i></button>-->
+                    <!--<button class="main_button"><i class="fab fa-facebook-f"></i></button>-->
+                    <!--<button class="main_button"><i class="fab fa-twitter"></i></button>-->
+                <!--</div>-->
+            <!--</div>-->
+            <div class="header_wrapper">
+                <div class="header_wrapper_block" layout="column" layout-align="center space-between">
+                    <div class="header_site_content_menu">
+                        <ul>
+                            <!--<li><a ui-sref="prices">{{ 'prices' | translate }}</a>-->
+                                <!--<ul class="solutions_list">-->
+                                    <!--<li><a ui-sref="merchant_account">iscopay core</a></li>-->
+                                    <!--<li><a ui-sref="merchant_acquiring">iscopay expert</a></li>-->
+                                    <!--&lt;!&ndash;<li><a ui-sref="payment_processing">iscopay stream</a></li>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<li><a ui-sref="card_issuing">iscopay smart</a></li>&ndash;&gt;-->
+                                <!--</ul>-->
+                            <!--</li>-->
+                            <li><a ui-sref="about">{{ 'about_us' | translate }}</a></li>
+                            <li><a ui-sref="prices">{{ 'prices' | translate }}</a></li>
+                            <li><a ui-sref="technology">{{ 'technology' | translate }}</a></li>
+                            <li><a ui-sref="contact">{{ 'contact_us' | translate }}</a></li>
+                            <li><span ng-click="vm.langOpen('.lang_list')">{{ 'language' | translate }}</span>
+                                <ul class="lang_list">
+                                    <li><span ng-click="vm.changeLang('en')">EN</span></li>
+                                    <li><span ng-click="vm.changeLang('ru')">RUS</span></li>
+                                </ul></li>
+                        </ul>
+                    </div>
+                    <div class="header_wrapper_bottom">
+                        <!--<div class="header_site_content_social">-->
+                            <!--<div layout="row" layout-align="space-between center">-->
+                                <!--<button class="main_button"><i class="fab fa-linkedin-in"></i></button>-->
+                                <!--<button class="main_button"><i class="fab fa-facebook-f"></i></button>-->
+                                <!--<button class="main_button"><i class="fab fa-twitter"></i></button>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <div class="header_site_content_button">
+                            <div>
+                                <!--<button class="main_button">Become a partner</button>-->
+                                <button class="main_button primary" ui-sref="login">{{ 'get_started' | translate }}</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="header_wrapper_close">
+                    <button class="main_button" ng-click="vm.headerWrapperClose()"><i class="fas fa-times"></i></button>
+                </div>
+
+            </div>
+            <div class="header_wrapper_open">
+                <button class="main_button" ng-click="vm.headerWrapperOpen()"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+
+    </div>
+
+</header>

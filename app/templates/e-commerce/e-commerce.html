@@ -1,0 +1,37 @@
+<div id="e-commerce">
+    <header-block></header-block>
+
+    <div class="commerce_title">
+        <div class="container">
+            <div layout="row" layout-align=" start end">
+                <h2>{{"solutions" | translate }}</h2>
+            </div>
+        </div>
+    </div>
+    <div class="commerce_body">
+        <div class="container">
+            <div>
+                <div ng-repeat="solution in vm.solutions" class="commerce_item">
+
+                    <div class="commerce_body_item">
+                        <p>{{solution.subTitle | translate }}</p>
+                        <h3>{{solution.title | translate }}</h3>
+
+                      <button class="main_button" ui-sref="{{solution.link}}">{{ 'learn_more' | translate }}</button>
+                    </div>
+                    <div>
+                        <h4>{{solution.text1  | translate }}</h4>
+                        <p>{{solution.text2  | translate }}</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <logo-block></logo-block>
+
+    <footer-block></footer-block>
+
+</div>

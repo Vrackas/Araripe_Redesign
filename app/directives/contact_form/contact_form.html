@@ -1,0 +1,50 @@
+<div id="contact_form">
+    <div class="container" layout="column" layout-align="center center" >
+        <h3>{{"contact_form_title" | translate}}</h3>
+        <p>{{"contact_form_text" | translate}}</p>
+        
+        <div layout="column" layout-align="center center">
+            <i class="material-icons">&#xE8A6;</i>
+            <form class="form-contact" name="contactForm" novalidate>
+
+                <md-input-container class="md-block" md-no-float>
+                    <input type="text" name="name" placeholder="Name" md-autofocus ng-model="vm.form.name">
+                </md-input-container>
+
+                <md-input-container class="md-block" md-no-float>
+                    <input type="text" name="companyName" placeholder="Company name" ng-model="vm.form.companyName">
+                </md-input-container>
+
+                <md-input-container class="md-block" md-no-float>
+                    <input type="text" name="link" placeholder="Web site" ng-model="vm.form.link">
+                </md-input-container>
+
+                <md-input-container class="md-block" md-no-float>
+                    <input type="text" name="phone" placeholder="Phone" ng-model="vm.form.phone">
+                </md-input-container>
+                
+                
+                <md-input-container class="md-block" md-no-float>
+                    <input type="text" name="theme" placeholder="Theme" ng-model="vm.form.theme">
+                </md-input-container>
+
+
+                <md-input-container  md-no-float>
+                    <label> </label>
+                    <textarea md-no-resize  name="message" placeholder="Message"  id="" cols="30" rows="5" ng-model="vm.form.message"></textarea>
+                </md-input-container>
+
+
+
+                <div id="button-register" class="button-log__in ">
+                    <button ng-click="vm.sendContact(contactForm)"
+                            ng-disabled="contactForm.$invalid || contactForm.$pristine"
+                            class="main_button primary">
+                        {{'contact_form_button' | translate}}
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>

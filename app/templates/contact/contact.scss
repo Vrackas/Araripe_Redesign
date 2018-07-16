@@ -1,0 +1,150 @@
+#contact {
+  //template
+  background-color: #ffffff;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #384656;
+  width: 100%;
+  height: 100%;
+  .contact {
+    padding-bottom: 150px;
+    .contact_title {
+      padding-top: 116px;
+      height: 280px;
+      width: 100%;
+      background: linear-gradient(130deg, #ff0037 0%, #e92084 100%);
+      position: relative;
+      z-index: 1;
+      .container {
+        height: 100%;
+        div {
+          height: 100%;
+          h2 {
+            color: #ffffff;
+            font: {
+              size: 65px;
+              weight: 300;
+            }
+            letter-spacing: 4px;
+            margin-left: 50px;;
+          }
+        }
+      }
+    }
+    .container {
+      h3 {
+        line-height: 40px;
+        font-size: 32px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+      }
+
+      .contact_phones > div {
+        width: 470px;
+        margin-right: 10px;
+        h3 {
+          border-bottom: 1px solid #ebeef0;
+          padding: 20px 0;
+          padding-top: 100px;
+        }
+        a {
+          margin: 15px 0;
+        }
+        .contact_phones_mail {
+          a {
+            color: #384656;
+            text-decoration: none;
+            margin-right: 20px;
+          }
+        }
+        .contact_phones_phone {
+          a {
+            color: #384656;
+            text-decoration: none;
+            margin: 5px 0;
+            //margin-right: 20px;
+          }
+
+        }
+      }
+      .contact_pay {
+        margin-top: 100px;
+        padding-bottom: 100px;
+        h3 {
+          border-bottom: 1px solid #ebeef0;
+          padding: 20px 0;
+
+        }
+        .contact_pay_item {
+          margin: 15px;
+          h4 {
+            font-size: 18px;
+            line-height: 32px;
+            font-family: "Merriweather", serif;
+            font-weight: 300;
+            font-style: italic;
+            margin: 0;
+          }
+          a {
+            color: #384656;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 16px;
+            line-height: 26px;
+          }
+        }
+      }
+      .contact_marketing{
+        h3{
+          border-bottom: 1px solid #ebeef0;
+          padding: 20px 0;
+        }
+        a {
+          color: #384656;
+          text-decoration: none;
+          cursor: pointer;
+          font-size: 16px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+
+  //media
+
+  @media (min-width: 1500px) {
+
+  }
+
+  @media (min-width: 1200px) and (max-width: 1500px) {
+
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    .container {
+      .contact_phones > div {
+        width: 350px !important;
+      }
+    }
+  }
+
+  @media (min-width: 540px) and (max-width: 768px) {
+
+  }
+
+  @media (max-width: 540px) {
+    .contact_title {
+      h2 {
+        letter-spacing: 1px !important;
+        font-size: 54px !important;
+        margin-left: 0 !important;
+      }
+
+    }
+  }
+
+}

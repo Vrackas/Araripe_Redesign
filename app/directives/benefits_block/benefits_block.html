@@ -1,0 +1,20 @@
+<div id="benefits_block">
+    <div class="container">
+        <div class="benefits_title">
+            <h3>
+                {{"benefits_title" | translate}}
+            </h3>
+        </div>
+        <div class="benefits_list">
+            <div class="benefits_list_items" layout-wrap layout="row" layout-align="space-around center">
+                <div class="benefits_list_item" ng-repeat="benefit in vm.benefits" layout="row">
+                    <img class="benefit-list-icon" src="{{benefit.link}}">
+                    <div class="benefits_list_text" property="title">
+                        <p>{{benefit.text | translate}}</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
