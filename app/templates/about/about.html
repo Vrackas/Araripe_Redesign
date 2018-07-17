@@ -2,46 +2,43 @@
     <header-block></header-block>
 
 
-    <div class="about">
+    <div class="about" id="section">
         <div class="about_title">
             <div class="container">
-                <div layout="row" layout-align=" start end">
-                    <h2>{{'about_us' | translate}}</h2>
+                <div layout="row" layout-align="center ">
+                    <h2 class="main_title"><span>{{'about_us' | translate}}</span>{{'about_us' | translate}}</h2>
                 </div>
+                <div><p>{{'about_block' | translate}}</p></div>
             </div>
-        </div>
-        <div class="about_block" layout="row" layout-align="space-between start">
-            <div><p>{{'about_block' | translate}}</p></div>
-            <div></div>
         </div>
         <div class="about_about">
             <div class="container">
                 <div layout="row" layout-align="space-between center">
-                    <div class="left_block">
+                    <div class="number_block" layout="column">
+                        <p>1</p>
+                    </div>
+                    <div class="text_block">
                         <p>{{'about_about_text1' | translate}}</p>
                         <p>{{'about_about_text2' | translate}}</p>
                     </div>
-                    <div class="right_block" layout="column">
-                        <img src="content/img/about/Flag_of_the_United_Kingdom.svg" alt="">
+
+                </div>
+                <div layout="row" layout-align="space-between center">
+                    <div class="text_block">
+                        <p>{{'about_office_text1' | translate}}</p>
                         <p>{{'about_about_text3' | translate}}</p>
+
+                    </div>
+                    <div class="number_block" layout="column">
+                        <p>2</p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="about_office">
-            <div class="container" layout="column">
-                <div layout="row" layout-align="center start" class="first_block">
-                    <div><p>{{'about_office_text1' | translate}}</p>
-                    </div>
-                    <!--<div><p>{{'about_office_text2' | translate}}</p></div>-->
-                </div>
-                <!--<div class="second_block"><p>{{'about_office_text3' | translate}}</p></div>-->
             </div>
         </div>
         <div class="about_map">
             <div class="container">
                 <div class="about_map_text" layout="row"
-                     layout-align="space-around start">
+                     layout-align="space-around start" layout-wrap>
                     <div>
                         <h3>45</h3>
                         <p>{{'about_map_text1' | translate}}</p>
@@ -55,24 +52,37 @@
                         <p>{{'about_map_text3' | translate}}</p>
                     </div>
                 </div>
-                <div class="about_map_value">
-                    <h3>{{'about_map_value_title' | translate}}</h3>
-                    <div layout="row" layout-align="space-around center" layout-wrap>
-                        <div class="about_map_value_item" layout-align="start" layout="column"
-                             ng-repeat="value in vm.values">
-                            <img src="{{value.image}}" alt="">
-                            <h4>{{value.title | translate}}</h4>
-                            <p>{{value.text | translate}}</p>
-                        </div>
+                <!--<div class="about_map_value">-->
+                <!--<h3>{{'about_map_value_title' | translate}}</h3>-->
+                <!--<div layout="row" layout-align="space-around center" layout-wrap>-->
+                <!--<div class="about_map_value_item" layout-align="start" layout="column"-->
+                <!--ng-repeat="value in vm.values">-->
+                <!--<img src="{{value.image}}" alt="">-->
+                <!--<h4>{{value.title | translate}}</h4>-->
+                <!--<p>{{value.text | translate}}</p>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+            </div>
+        </div>
+        <div class="about_value">
+            <div class="container">
+                <h3>{{'about_map_value_title' | translate}}</h3>
+                <div layout="row" layout-align="space-around center" layout-wrap>
+                    <div class="about_map_value_item" layout-align="start" layout="column"
+                         ng-repeat="value in vm.values">
+                        <img src="{{value.image}}" alt="">
+                        <h4>{{value.title | translate}}</h4>
+                        <p>{{value.text | translate}}</p>
                     </div>
                 </div>
             </div>
         </div>
         <!--<div class="about_vision">-->
-            <!--<div class="container" layout="row" layout-align="space-around start">-->
-                <!--<div><h3>{{"about_vision_title" | translate}}</h3></div>-->
-                <!--<div><p>{{"about_vision_text" | translate}}</p></div>-->
-            <!--</div>-->
+        <!--<div class="container" layout="row" layout-align="space-around start">-->
+        <!--<div><h3>{{"about_vision_title" | translate}}</h3></div>-->
+        <!--<div><p>{{"about_vision_text" | translate}}</p></div>-->
+        <!--</div>-->
         <!--</div>-->
     </div>
 

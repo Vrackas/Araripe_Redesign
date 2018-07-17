@@ -89,13 +89,13 @@ span:after:focus {
   }
   //position: relative;
   span {
-    display: none;
+    display: block;
     position: absolute;
     font-size: 70px;
-    width: 150%;
+    width: 100%;
     opacity: 0.1;
     right:50%;
-    margin-right: -75%;
+    margin-right: -50%;
     margin-top: -1%;
   }
 }
@@ -120,11 +120,21 @@ span:after:focus {
   .container {
     width: 970px;
   }
+  .main_title{
+    span{
+      //display: none;
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
   .container {
     width: 750px;
+  }
+  .main_title{
+    span{
+      //display: none;
+    }
   }
 }
 
@@ -132,10 +142,20 @@ span:after:focus {
   .container {
     width: 500px;
   }
+  .main_title{
+    span{
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 540px) {
   .container {
     width: 310px;
+  }
+  .main_title{
+    span{
+      display: none;
+    }
   }
 }

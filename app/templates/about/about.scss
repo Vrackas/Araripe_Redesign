@@ -10,149 +10,123 @@
   height: 100%;
   .about_title {
     padding-top: 116px;
-    height: 280px;
+    height: 640px;
     width: 100%;
-    background: linear-gradient(130deg, #ff0037 0%, #e92084 100%);
+    background: {
+      image: url("../../content/img/about/about_header_bg.png");
+      size: cover;
+      position-y: bottom;
+      position-x: center;
+    }
     position: relative;
     z-index: 1;
     .container {
       height: 100%;
       div {
-        height: 100%;
+        height: 50%;
+        position: relative;
+        text-align: center;
         h2 {
+          padding-top: 100px;
+
           color: #ffffff;
           font: {
-            size: 65px;
-            weight: 300;
+            size: 55px;
+            //weight: 300;
           }
+          text-transform: uppercase;
           letter-spacing: 4px;
-          margin-left: 50px;;
+          //margin-left: 50px;;
+        }
+        p {
+          width: 615px;
+          color: #ffffff;
+          font-size: 18px;
+          font-family: "Raleway", sans-serif;
+          font-style: italic;
+          text-align: left;
+          margin-top: 100px;
         }
       }
     }
   }
-  .about_block {
-    width: 100%;
-    height: 680px;
-    div:nth-child(1) {
-      width: 100%;
-      p {
-        width: 300px;
-        font-size: 20px;
-        line-height: 32px;
-        font-family: "Merriweather", serif;
-        font-weight: 300;
-        font-style: italic;
-        color: #97a3b4;
-        margin: 120px auto;
-      }
-    }
-    div:nth-child(2) {
-      background: {
-        image: url("../../content/img/about/IMG_2070_ED-500kb.jpg");
-        size: cover;
-        position: center;
-      }
-    ;
-      width: 120%;
-      height: 100%;
-    }
-  }
   .about_about {
-    border-top: 1px solid #ebeef0;
     padding-top: 100px;
     padding-bottom: 70px;
     .container {
       div {
-        .left_block {
+        .number_block {
           p {
-            width: 640px;
-            font-size: 16px;
-            line-height: 26px;
+            font: {
+              size: 300px;
+              family: 'Open Sans', sans-serif;
+            }
+          ;
+            margin: 0;
+            color: #fdf3f6;
+            padding: 0 20px;
           }
         }
-        .right_block {
-          img {
-            width: 40px;
-          }
+        .text_block {
+          border-radius: 25px;
+          box-shadow: 0px 0px 25.8px 17.2px rgba(0, 0, 0, 0.08);
+          width: 850px;
+          margin: 50px 0;
           p {
-            width: 140px;
+            font: {
+              family: "Raleway", sans-serif;
+              size: 18px;
+              weight: 400;
+            }
+          ;
+            padding: 0 15px;
             line-height: 24px;
-            font-size: 14px;
-            font-family: "Merriweather", serif;
-            font-weight: 300;
-            font-style: italic;
-            color: #97a3b4;
+
           }
         }
       }
     }
   }
-  .about_office {
-    background: linear-gradient(122deg, #ff0037, #e92084);
-    padding-top: 100px;
-    padding-bottom: 150px;
-    color: white;
-    .container {
 
-      .first_block {
-        div {
-          margin-right: 100px;
-          width: 400px;
-          margin-top: 0;
-          padding-top: 0;
-          border-top: none;
-          font-size: 16px !important;
-          line-height: 26px;
-          font: {
-            family: "Roboto", sans-serif;
-            weight: 400;
-            style: normal;
-          }
-        ;
-
-        }
-      }
-      .second_block {
-        width: 640px;
-        margin-top: 70px;
-        padding-top: 20px;
-        border-top: 1px solid rgba(255, 255, 255, 0.2);
-        p {
-          font-size: 22px;
-          line-height: 32px;
-          font-family: "Merriweather", serif;
-          font-weight: 300;
-          font-style: italic;
-        }
-
-      }
-
-    }
-
-  }
   .about_map {
     background: {
-      image: url("../../content/img/about/about-map-02 (1).jpg");
-      size: cover;
-      position: center;
+      image: url("../../content/img/about/internet.png");
+      size: auto;
+      position: top;
+      repeat: no-repeat;
     }
   ;
     width: 100%;
     height: auto;
     .container {
       .about_map_text {
-        padding-bottom: 600px;
+        padding-bottom: 60px;
         div {
-          width: 240px;
+          width: 300px;
+          height: 300px;
           text-align: center;
           font-family: "Roboto", sans-serif;
           color: #ee1b46;
+          box-shadow: 0px 0px 25.8px 17.2px rgba(0, 0, 0, 0.08);
+          border-radius: 35px;
+          background: white;
+          margin-bottom: 40px;
           h3 {
             margin-bottom: 10px;
-            font-size: 56px;
+            margin-top: 60px;
+            font-size: 115px;
             line-height: 1;
             font-weight: 700;
+            font-family: 'Open Sans', sans-serif;
+          }
+          p{
+            font: {
+              family: "Raleway", sans-serif;
+              weight: 400;
+              size: 18px;
+            };
+            color: #303030;
+            padding: 0 15px;
           }
         }
       }
@@ -188,33 +162,65 @@
       }
     }
   }
-  .about_vision {
-    padding-top: 100px;
-    padding-bottom: 150px;
-    border-top: 1px solid #ebeef0;
-    .container {
-      //width: 960px;
-      h3 {
-        width: 380px;
-        line-height: 56px;
-        font-size: 48px;
-
-        font-weight: 300;
+  .about_value{
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    background: {
+      //image: url("../../content/img/about/internet.png");
+      size: auto;
+      color: #5d6364;
+      position: top;
+      repeat: no-repeat;
+    }
+    height: 700px;
+    .container{
+      h3{
+        color: white;
+        text-align: center;
+        font: {
+          family: "Raleway", sans-serif;
+          size: 48px;
+          weight: bold;
+        };
+        padding: 40px 0;
+        margin: 0;
       }
-      p {
+
+      .about_map_value_item{
+        color: white;
+        text-align: center;
         width: 400px;
-        font-size: 24px;
-        line-height: 36px;
-        //margin-left: 320px;
+        height: 200px;
+        margin: 30px auto;
+        border-radius: 30px;
+        background: rgba(0,0,0,0.2);
+        img{
+          width: 40px;
+          margin: 40px auto 0;
+        }
+        h4{
+          font: {
+            family: "Raleway", sans-serif;
+            size: 30px;
+            weight: 600;
+          };
+          margin: 5px auto;
+        }
+        p{
+          font: {
+            family: "Raleway", sans-serif;
+            size: 18px;
+            weight: 400;
+          };
+          margin: 5px auto;
+          padding: 0 10px;
 
-        position: relative;
-
-        font-family: "Merriweather", serif;
-        font-weight: 300;
-        font-style: italic;
+        }
       }
+
     }
   }
+
 
   //media
 
@@ -231,40 +237,44 @@
   }
 
   @media (min-width: 768px) and (max-width: 992px) {
-    .about_about {
+    .about_title {
       .container {
         div {
-          .left_block {
-            p {
-              width: 600px;
-            }
+          p {
+            margin-top: 50px;
           }
+        }
+      }
+
+    }
+    .about_value{
+      .container{
+        .about_map_value_item{
+          width: 350px;
         }
       }
     }
   }
 
   @media (min-width: 540px) and (max-width: 768px) {
-    .about_block {
-      div:nth-child(2) {
-        display: none;
+    .about_title {
+      .container {
+        div {
+          p {
+            margin-top: 10px;
+            width: 500px;
+            text-align: center;
+          }
+        }
       }
+
     }
     .about_about {
       .container {
         div {
-          flex-direction: column;
-          .left_block {
-            p {
-              width: 500px;
-            }
+          .number_block {
+            display: none;
           }
-          .right_block {
-            p {
-              width: 500px;
-            }
-          }
-        ;
         }
       }
     }
@@ -278,73 +288,48 @@
         }
       }
     }
-    .about_map {
-      .container {
-        .about_map_value {
-          .about_map_value_item {
-            margin-right: 20px;
-          }
+    .about_value{
+      height: auto;
+      .container{
+        .about_map_value_item{
+
         }
       }
-    }
-    .about_vision {
-      .container{
-        flex-direction: column;
-      }
-
     }
   }
 
   @media (max-width: 540px) {
     .about_title {
-      h2 {
-        letter-spacing: 1px !important;
-        font-size: 54px !important;
-        margin-left: 0 !important;
+      .container {
+        div {
+          h2 {
+            padding-top: 50px;
+            letter-spacing: 1px !important;
+            font-size: 54px !important;
+            margin-left: 0 !important;
+          }
+          p {
+            margin-top: -50px;
+            width: 300px;
+
+            text-align: center;
+
+          }
+
+        }
       }
 
-    }
-    .about_block {
-      div:nth-child(2) {
-        display: none;
-      }
     }
     .about_about {
       .container {
         div {
-          flex-direction: column;
-          .left_block {
-            p {
-              width: 300px;
-              text-align: justify;
-            }
+          .number_block {
+            display: none;
           }
-          .right_block {
-            p {
-              width: 300px;
-            }
-          }
-        ;
         }
       }
     }
-    .about_office {
-      .container {
-        .first_block {
-          flex-direction: column;
-          div {
-            width: auto;
-            margin: 0;
-            p {
-              text-align: justify;
-            }
-          }
-        }
-        .second_block {
-          width: auto;
-        }
-      }
-    }
+
     .about_map {
       .container {
         .about_map_text {
@@ -352,14 +337,15 @@
         }
       }
     }
-    .about_vision {
+
+   .about_value{
+     height: auto;
+     border-radius: 0 !important;
       .container{
-        flex-direction: column;
-        h3, p{
-          width: auto;
+        .about_map_value_item{
+
         }
       }
-
     }
   }
 
