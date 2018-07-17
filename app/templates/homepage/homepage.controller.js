@@ -16,28 +16,36 @@
 
         vm.proactive = [
             {
-                text: "homepage_proactive_item1"
+                text: "homepage_proactive_item1",
+                link: 'content/img/proactive/item_1.png'
             },
             {
-                text: "homepage_proactive_item2"
+                text: "homepage_proactive_item2",
+                link: 'content/img/proactive/item_2.png'
             },
             {
-                text: "homepage_proactive_item3"
+                text: "homepage_proactive_item3",
+                link: 'content/img/proactive/item_3.png'
             },
             {
-                text: "homepage_proactive_item4"
+                text: "homepage_proactive_item4",
+                link: 'content/img/proactive/item_4.png'
             },
             {
-                text: "homepage_proactive_item5"
+                text: "homepage_proactive_item5",
+                link: 'content/img/proactive/item_5.png'
             },
             {
-                text: "homepage_proactive_item6"
+                text: "homepage_proactive_item6",
+                link: 'content/img/proactive/item_6.png'
             },
             {
-                text: "homepage_proactive_item7"
+                text: "homepage_proactive_item7",
+                link: 'content/img/proactive/item_7.png'
             },
             {
-                text: "homepage_proactive_item8"
+                text: "homepage_proactive_item8",
+                link: 'content/img/proactive/item_8.png'
             }
         ];
 

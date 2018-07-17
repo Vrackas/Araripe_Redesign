@@ -7,13 +7,13 @@
 
         <!--main_section-->
 
-        <div class="main_section">
+        <div class="main_section" id="section">
             <div class="main_section_bg"></div>
             <div class="container">
-                <div layout="column" layout-align="center center">
+                <div layout="column" layout-align="start">
                     <h1>{{ 'homepage_title' | translate }}</h1>
                     <h2>{{ 'homepage_subtitle' | translate }}</h2>
-                    <div></div>
+                    <button class="main_button" ui-sref="login">{{ 'get_started' | translate }}</button>
                 </div>
             </div>
         </div>
@@ -24,13 +24,13 @@
 
         <div class="solution">
             <div class="container">
-                <div class="solution_title" layout="row" layout-align="space-between start">
+                <div class="solution_title" layout="column" layout-align="space-between center">
                     <div>
                         <p>{{ 'homepage_solution_title' | translate }}</p>
                     </div>
                     <div><p>{{ 'homepage_solution_subtitle' | translate }}</p></div>
                 </div>
-                <div class="solution_body" layout="row">
+                <div class="solution_body" layout="row" layout-align="space-around center">
                     <div class="solution_item">
                         <div class="background"></div>
                         <div class="solution_body_item">
@@ -54,24 +54,24 @@
                         </div>
                     </div>
                     <!--<div class="solution_item">-->
-                        <!--<div class="background"></div>-->
-                        <!--<div class="solution_body_item">-->
-                            <!--<p>iscopay stream</p>-->
-                            <!--<h3>Payment Processing</h3>-->
-                            <!--<span>Empower your business with our comprehensive Payment Processing Solution for issuers and acquirers.</span>-->
-                            <!--<img src="content/img/solutions/processing_2.svg" alt="">-->
-                            <!--<div></div>-->
-                        <!--</div>-->
+                    <!--<div class="background"></div>-->
+                    <!--<div class="solution_body_item">-->
+                    <!--<p>iscopay stream</p>-->
+                    <!--<h3>Payment Processing</h3>-->
+                    <!--<span>Empower your business with our comprehensive Payment Processing Solution for issuers and acquirers.</span>-->
+                    <!--<img src="content/img/solutions/processing_2.svg" alt="">-->
+                    <!--<div></div>-->
+                    <!--</div>-->
                     <!--</div>-->
                     <!--<div class="solution_item">-->
-                        <!--<div class="background"></div>-->
-                        <!--<div class="solution_body_item">-->
-                            <!--<p>iscopay smart</p>-->
-                            <!--<h3>Card Issuing</h3>-->
-                            <!--<span>Expand your offering with our white-label Card Issuing Solution and launch your own card programme.</span>-->
-                            <!--<img src="content/img/solutions/smart.svg" alt="">-->
-                            <!--<div></div>-->
-                        <!--</div>-->
+                    <!--<div class="background"></div>-->
+                    <!--<div class="solution_body_item">-->
+                    <!--<p>iscopay smart</p>-->
+                    <!--<h3>Card Issuing</h3>-->
+                    <!--<span>Expand your offering with our white-label Card Issuing Solution and launch your own card programme.</span>-->
+                    <!--<img src="content/img/solutions/smart.svg" alt="">-->
+                    <!--<div></div>-->
+                    <!--</div>-->
                     <!--</div>-->
                 </div>
             </div>
@@ -83,27 +83,32 @@
 
         <div class="proactive">
             <div class="container" layout="row" layout-align="center">
-                <div layout="row" layout-wrap layout-align="start">
-                    <h3>{{ 'homepage_proactive_title' | translate }}</h3>
-                    <div ng-repeat="button in vm.proactive">
-                        <button id="proactive_{{$index}}" ng-mouseover="vm.proactiveAnim($index)"
-                                ng-mouseleave="vm.proactiveAnimOff($index)">
-                            {{ button.text | translate }}
-                        </button>
+                <div layout="column" layout-wrap layout-align="start center">
+                    <h3 class="main_title"><span>{{ 'homepage_proactive_title' | translate }}</span>{{
+                        'homepage_proactive_title' | translate }}</h3>
+                    <div class="proactive_list" layout="row" layout-wrap>
+                        <div ng-repeat="button in vm.proactive" layout="row" layout-align="center center">
+                            <img src="{{button.link}}" alt="">
+                            <button id="proactive_{{$index}}" ng-mouseover="vm.proactiveAnim($index)"
+                                    ng-mouseleave="vm.proactiveAnimOff($index)">
+                                {{ button.text | translate }}
+                            </button>
+                        </div>
                     </div>
+
                     <button class="main_button" ui-sref="prices">{{ 'our_solutions' | translate }}</button>
 
                 </div>
-                <div layout="column" class="proactive_img">
-                    <div class="proactive_0"><img src="content/img/proactive/1.png" alt=""></div>
-                    <div class="proactive_1"><img src="content/img/proactive/2.png" alt=""></div>
-                    <div class="proactive_2"><img src="content/img/proactive/3.png" alt=""></div>
-                    <div class="proactive_3"><img src="content/img/proactive/4.png" alt=""></div>
-                    <div class="proactive_4"><img src="content/img/proactive/5.png" alt=""></div>
-                    <div class="proactive_5"><img src="content/img/proactive/6.png" alt=""></div>
-                    <div class="proactive_6"><img src="content/img/proactive/7.png" alt=""></div>
-                    <div class="proactive_7"><img src="content/img/proactive/8.png" alt=""></div>
-                </div>
+                <!--<div layout="column" class="proactive_img">-->
+                <!--<div class="proactive_0"><img src="content/img/proactive/1.png" alt=""></div>-->
+                <!--<div class="proactive_1"><img src="content/img/proactive/2.png" alt=""></div>-->
+                <!--<div class="proactive_2"><img src="content/img/proactive/3.png" alt=""></div>-->
+                <!--<div class="proactive_3"><img src="content/img/proactive/4.png" alt=""></div>-->
+                <!--<div class="proactive_4"><img src="content/img/proactive/5.png" alt=""></div>-->
+                <!--<div class="proactive_5"><img src="content/img/proactive/6.png" alt=""></div>-->
+                <!--<div class="proactive_6"><img src="content/img/proactive/7.png" alt=""></div>-->
+                <!--<div class="proactive_7"><img src="content/img/proactive/8.png" alt=""></div>-->
+                <!--</div>-->
             </div>
         </div>
 
@@ -112,165 +117,168 @@
         <!--carousel-->
 
         <div class="carousel">
-            <div class="container">
-                <div class="carousel_content">
-                    <input type="radio" id="i1" name="images" checked/>
-                    <input type="radio" id="i2" name="images"/>
-                    <input type="radio" id="i3" name="images"/>
-                    <input type="radio" id="i4" name="images"/>
-                    <input type="radio" id="i5" name="images"/>
+
+            <div class="carousel_content">
+                <input type="radio" id="i1" name="images" checked/>
+                <input type="radio" id="i2" name="images"/>
+                <input type="radio" id="i3" name="images"/>
+                <input type="radio" id="i4" name="images"/>
+                <input type="radio" id="i5" name="images"/>
 
 
-                    <h3>{{ 'homepage_carousel_title' | translate }}</h3>
+                <h3>{{ 'homepage_carousel_title' | translate }}</h3>
 
-                    <div class="slide_img" id="one">
+                <div class="slide_img" id="one">
 
-                        <img src="content/img/hp_carousel/versatile_01.jpg">
+                    <img src="content/img/hp_carousel/versatile_01.jpg">
 
-                        <label class="prev" for="i4"><span></span></label>
-                        <label class="next" for="i2"><span></span></label>
+                    <label class="prev" for="i4"><span></span></label>
+                    <label class="next" for="i2"><span></span></label>
 
-                        <div class="slide_content">
-                            <div class="slide_content_title">
-                                <h4 class="heading-3" property="title">
-                                    {{ 'homepage_carousel_item1_title' | translate }}
-                                </h4>
-                            </div>
-                            <div class="slide_content_text">
-                                <div property="body">
-                                    <p>{{ 'homepage_carousel_item1_text' | translate }} </p>
-
-                                </div>
-                            </div>
-                            <div class="slide_content_button">
-                                <button class="main_button" ui-sref="prices">{{ 'learn_more' | translate }}</button>
+                    <div class="slide_content">
+                        <div class="slide_content_title">
+                            <h4 class="heading-3" property="title">
+                                {{ 'homepage_carousel_item1_title' | translate }}
+                            </h4>
+                        </div>
+                        <div class="slide_content_text">
+                            <div property="body">
+                                <p>{{ 'homepage_carousel_item1_text' | translate }} </p>
 
                             </div>
                         </div>
+                        <div class="slide_content_button">
+                            <button class="main_button" ui-sref="prices">{{ 'learn_more' | translate }}</button>
 
-
+                        </div>
                     </div>
 
-                    <div class="slide_img" id="two">
 
-                        <img src="content/img/hp_carousel/versatile_02.jpg">
+                </div>
 
-                        <label class="prev" for="i1"><span></span></label>
-                        <label class="next" for="i3"><span></span></label>
-                        <div class="slide_content">
-                            <div class="slide_content_title">
-                                <h4 class="heading-3" property="title">
-                                    {{ 'homepage_carousel_item2_title' | translate }}
-                                </h4>
-                            </div>
-                            <div class="slide_content_text">
-                                <div property="body">
-                                    <p>{{ 'homepage_carousel_item2_text' | translate }}</p>
+                <div class="slide_img" id="two">
 
-                                </div>
-                            </div>
-                            <div class="slide_content_button">
-                                <button class="main_button" ui-sref="prices">{{ 'learn_more' | translate }}</button>
+                    <img src="content/img/hp_carousel/versatile_02.jpg">
+
+                    <label class="prev" for="i1"><span></span></label>
+                    <label class="next" for="i3"><span></span></label>
+                    <div class="slide_content">
+                        <div class="slide_content_title">
+                            <h4 class="heading-3" property="title">
+                                {{ 'homepage_carousel_item2_title' | translate }}
+                            </h4>
+                        </div>
+                        <div class="slide_content_text">
+                            <div property="body">
+                                <p>{{ 'homepage_carousel_item2_text' | translate }}</p>
 
                             </div>
                         </div>
+                        <div class="slide_content_button">
+                            <button class="main_button" ui-sref="prices">{{ 'learn_more' | translate }}</button>
 
+                        </div>
                     </div>
 
-                    <div class="slide_img" id="three">
-                        <img src="content/img/hp_carousel/versatile_03.jpg">
+                </div>
 
-                        <label class="prev" for="i2"><span></span></label>
-                        <label class="next" for="i4"><span></span></label>
+                <div class="slide_img" id="three">
+                    <img src="content/img/hp_carousel/versatile_03.jpg">
 
-                        <div class="slide_content">
-                            <div class="slide_content_title">
-                                <h4 class="heading-3" property="title">
-                                    {{ 'homepage_carousel_item3_title' | translate }}
-                                </h4>
-                            </div>
-                            <div class="slide_content_text">
-                                <div property="body">
-                                    <p>{{ 'homepage_carousel_item3_text' | translate }}</p>
+                    <label class="prev" for="i2"><i class="fas fa-arrow-left"></i><span><i class="fas fa-arrow-left"></i></span></label>
+                    <label class="next" for="i4"><span><i class="fas fa-arrow-right"></i></span></label>
 
-                                </div>
-                            </div>
-                            <div class="slide_content_button">
-                                <button class="main_button" ui-sref="prices">{{ 'learn_more' | translate }}</button>
+                    <div class="slide_content">
+                        <div class="slide_content_title">
+                            <h4 class="heading-3" property="title">
+                                {{ 'homepage_carousel_item3_title' | translate }}
+                            </h4>
+                        </div>
+                        <div class="slide_content_text">
+                            <div property="body">
+                                <p>{{ 'homepage_carousel_item3_text' | translate }}</p>
 
                             </div>
                         </div>
+                        <div class="slide_content_button">
+                            <button class="main_button" ui-sref="prices">{{ 'learn_more' | translate }}</button>
 
-
+                        </div>
                     </div>
 
-                    <div class="slide_img" id="four">
-                        <img src="content/img/hp_carousel/versatile_05.jpg">
 
-                        <label class="prev" for="i3"><span></span></label>
-                        <label class="next" for="i5"><span></span></label>
+                </div>
 
-                        <div class="slide_content">
-                            <div class="slide_content_title">
-                                <h4 class="heading-3" property="title">
-                                    {{ 'homepage_carousel_item4_title' | translate }}
-                                </h4>
-                            </div>
-                            <div class="slide_content_text">
-                                <div property="body">
-                                    <p>{{ 'homepage_carousel_item4_text' | translate }}</p>
+                <div class="slide_img" id="four">
+                    <img src="content/img/hp_carousel/versatile_05.jpg">
 
-                                </div>
-                            </div>
-                            <div class="slide_content_button">
-                                <button class="main_button" ui-sref="prices">{{ 'learn_more' | translate }}</button>
+                    <label class="prev" for="i3"><span></span></label>
+                    <label class="next" for="i5"><span></span></label>
+
+                    <div class="slide_content">
+                        <div class="slide_content_title">
+                            <h4 class="heading-3" property="title">
+                                {{ 'homepage_carousel_item4_title' | translate }}
+                            </h4>
+                        </div>
+                        <div class="slide_content_text">
+                            <div property="body">
+                                <p>{{ 'homepage_carousel_item4_text' | translate }}</p>
 
                             </div>
                         </div>
+                        <div class="slide_content_button">
+                            <button class="main_button" ui-sref="prices">{{ 'learn_more' | translate }}</button>
 
+                        </div>
                     </div>
 
-                    <div class="slide_img" id="five">
-                        <img src="content/img/hp_carousel/versatile_04.jpg">
+                </div>
 
-                        <label class="prev" for="i4"><span></span></label>
-                        <label class="next" for="i1"><span></span></label>
+                <div class="slide_img" id="five">
+                    <img src="content/img/hp_carousel/versatile_04.jpg">
 
-                        <div class="slide_content">
-                            <div class="slide_content_title">
-                                <h4 class="heading-3" property="title">
-                                    {{ 'homepage_carousel_item5_title' | translate }}
-                                </h4>
-                            </div>
-                            <div class="slide_content_text">
-                                <div property="body">
-                                    <p>{{ 'homepage_carousel_item5_text' | translate }}</p>
+                    <label class="prev" for="i4"><span></span></label>
+                    <label class="next" for="i1"><span></span></label>
 
-                                </div>
-                            </div>
-                            <div class="slide_content_button">
-                                <button class="main_button" ui-sref="prices">{{ 'learn_more' | translate }}</button>
+                    <div class="slide_content">
+                        <div class="slide_content_title">
+                            <h4 class="heading-3" property="title">
+                                {{ 'homepage_carousel_item5_title' | translate }}
+                            </h4>
+                        </div>
+                        <div class="slide_content_text">
+                            <div property="body">
+                                <p>{{ 'homepage_carousel_item5_text' | translate }}</p>
 
                             </div>
                         </div>
+                        <div class="slide_content_button">
+                            <button class="main_button" ui-sref="prices">{{ 'learn_more' | translate }}</button>
 
-                    </div>
-
-
-                    <div id="nav_slide">
-                        <div>
-                            <div>
-                                <label for="i1" class="dots" id="dot1"><p>{{ 'homepage_carousel_item1_title' | translate }}</p></label>
-                                <label for="i2" class="dots" id="dot2"><p>{{ 'homepage_carousel_item2_title' | translate }}</p></label>
-                                <label for="i3" class="dots" id="dot3"><p>{{ 'homepage_carousel_item3_title' | translate }}</p></label>
-                                <label for="i4" class="dots" id="dot4"><p>{{ 'homepage_carousel_item4_title' | translate }}</p></label>
-                                <label for="i5" class="dots" id="dot5"><p>{{ 'homepage_carousel_item5_title' | translate }}</p></label></div>
                         </div>
                     </div>
+
                 </div>
 
 
+                <div id="nav_slide">
+                    <div>
+                        <div layout="row" layout-align="center center">
+                            <label for="i1" class="dots" id="dot1"><p>{{ 'homepage_carousel_item1_title' | translate
+                                }}</p></label>
+                            <label for="i2" class="dots" id="dot2"><p>{{ 'homepage_carousel_item2_title' | translate
+                                }}</p></label>
+                            <label for="i3" class="dots" id="dot3"><p>{{ 'homepage_carousel_item3_title' | translate
+                                }}</p></label>
+                            <label for="i4" class="dots" id="dot4"><p>{{ 'homepage_carousel_item4_title' | translate
+                                }}</p></label>
+                            <label for="i5" class="dots" id="dot5"><p>{{ 'homepage_carousel_item5_title' | translate
+                                }}</p></label></div>
+                    </div>
+                </div>
             </div>
+
 
         </div>
 

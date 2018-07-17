@@ -61,5 +61,26 @@
             location.href = 'https://www.desk.iscopay.com/';
 
         }
+
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                let wScroll = $(this).scrollTop();
+
+                if (wScroll > $('#section').offset().top + 50) {
+                    console.log("hi")
+                    $('#header_site').css({
+                        'background': 'rgba(0, 0, 0, 0.48)',
+                        'transition': '.8s'
+                    })
+                }
+                else if (wScroll > $('#section').offset().top - 60) {
+                    $('#header_site').css({
+                        'background': 'transparent',
+                        'transition': '.8s'
+                    })
+                }
+
+            })
+        })
     }
 })();

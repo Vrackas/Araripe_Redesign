@@ -100,7 +100,7 @@
                 controller: 'LoginController',
                 controllerAs: 'vm'
             }),
-            $locationProvider.html5Mode(true);
+            // $locationProvider.html5Mode(true);
 
 
         $translateProvider.registerAvailableLanguageKeys(['en', 'ru'], {
@@ -123,7 +123,7 @@
             "footer_info": "Since 2018, Araripe ™ is owned by Araripe LTD (UK)",
 
 
-            "get_started": "Get started",
+            "get_started": "Get Started",
             "learn_more": "Learn more",
             "our_solutions": "Our solutions",
 

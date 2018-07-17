@@ -3,29 +3,30 @@
 #footer_block {
   height: auto;
   width: 100%;
-  background: #202020;
+  background: #ffffff;
   padding: 40px 0;
   font-family: 'Roboto', sans-serif;
   .container {
     .footer_container {
       .footer_toolbar {
-        border-bottom: 1px solid #303030;
+        //border-bottom: 1px solid #303030;
         padding-bottom: 20px;
         margin-bottom: 20px;
         position: relative;
         .footer_toolbar_nav {
           font-size: 14px;
-          font-family: "Roboto", sans-serif;
+          //font-family: "Roboto", sans-serif;
           line-height: 1.42857;
           color: #384656;
           -webkit-font-smoothing: antialiased;
           .footer_nav {
             .footer_nav_item {
               font-weight: 700;
-              font-size: 12px;
+              font-size: 18px;
               line-height: 30px;
               letter-spacing: 1px;
-              text-transform: uppercase;
+              font-family: 'Raleway', sans-serif;
+              text-decoration: none;
               .footer_toolbar_btn {
                 width: 30px;
                 height: 30px;
@@ -43,9 +44,9 @@
 
             }
             a {
-              color: rgba(151, 163, 180, 0.5);
-              text-decoration: underline;
-              //text-decoration: none;
+              color: #303030;
+              //text-decoration: underline;
+              text-decoration: none;
             }
             a:hover{
               color: rgba(255, 55, 80, 1);
@@ -106,8 +107,12 @@
       .footer_addon {
         p {
           line-height: 20px;
-          font-size: 13px;
-          color: rgba(151, 163, 180, 0.5);
+          font:{
+            size: 18px;
+            family: "Raleway", sans-serif;
+            weight: bold;
+          }
+          color: #303030;
         }
       }
       .footer_copyright {
@@ -137,7 +142,7 @@
 @media (min-width: 1200px) and (max-width: 1499px) {
   #footer_block {
     .container {
-      width: 960px;
+      //width: 960px;
     }
   }
 }
@@ -145,7 +150,7 @@
 @media (min-width: 992px) and (max-width: 1200px) {
   #footer_block {
     .container {
-      width: 960px;
+      //width: 960px;
     }
   }
 }
