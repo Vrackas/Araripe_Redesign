@@ -1274,6 +1274,12 @@
         font-weight: 400;
         margin: 5px auto;
         padding: 0 10px; }
+  @media (min-width: 1500px) {
+    #about .about_value .container {
+      width: 960px; } }
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    #about .about_value .container {
+      width: 960px; } }
   @media (min-width: 768px) and (max-width: 992px) {
     #about .about_title .container div p {
       margin-top: 50px; }

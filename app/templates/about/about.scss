@@ -119,12 +119,13 @@
             font-weight: 700;
             font-family: 'Open Sans', sans-serif;
           }
-          p{
+          p {
             font: {
               family: "Raleway", sans-serif;
               weight: 400;
               size: 18px;
-            };
+            }
+          ;
             color: #303030;
             padding: 0 15px;
           }
@@ -162,7 +163,7 @@
       }
     }
   }
-  .about_value{
+  .about_value {
     border-top-left-radius: 200px;
     border-bottom-right-radius: 200px;
     background: {
@@ -173,45 +174,48 @@
       repeat: no-repeat;
     }
     height: 700px;
-    .container{
-      h3{
+    .container {
+      h3 {
         color: white;
         text-align: center;
         font: {
           family: "Raleway", sans-serif;
           size: 48px;
           weight: bold;
-        };
+        }
+      ;
         padding: 40px 0;
         margin: 0;
       }
 
-      .about_map_value_item{
+      .about_map_value_item {
         color: white;
         text-align: center;
         width: 400px;
         height: 200px;
         margin: 30px auto;
         border-radius: 30px;
-        background: rgba(0,0,0,0.2);
-        img{
+        background: rgba(0, 0, 0, 0.2);
+        img {
           width: 40px;
           margin: 40px auto 0;
         }
-        h4{
+        h4 {
           font: {
             family: "Raleway", sans-serif;
             size: 30px;
             weight: 600;
-          };
+          }
+        ;
           margin: 5px auto;
         }
-        p{
+        p {
           font: {
             family: "Raleway", sans-serif;
             size: 18px;
             weight: 400;
-          };
+          }
+        ;
           margin: 5px auto;
           padding: 0 10px;
 
@@ -221,15 +225,22 @@
     }
   }
 
-
   //media
 
   @media (min-width: 1500px) {
-
+    .about_value {
+      .container {
+        width: 960px;
+      }
+    }
   }
 
   @media (min-width: 1200px) and (max-width: 1500px) {
-
+    .about_value {
+      .container {
+        width: 960px;
+      }
+    }
   }
 
   @media (min-width: 992px) and (max-width: 1200px) {
@@ -247,9 +258,9 @@
       }
 
     }
-    .about_value{
-      .container{
-        .about_map_value_item{
+    .about_value {
+      .container {
+        .about_map_value_item {
           width: 350px;
         }
       }
@@ -288,10 +299,10 @@
         }
       }
     }
-    .about_value{
+    .about_value {
       height: auto;
-      .container{
-        .about_map_value_item{
+      .container {
+        .about_map_value_item {
 
         }
       }
@@ -338,11 +349,11 @@
       }
     }
 
-   .about_value{
-     height: auto;
-     border-radius: 0 !important;
-      .container{
-        .about_map_value_item{
+    .about_value {
+      height: auto;
+      border-radius: 0 !important;
+      .container {
+        .about_map_value_item {
 
         }
       }
