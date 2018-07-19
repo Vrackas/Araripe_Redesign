@@ -3,23 +3,22 @@
     <header-block></header-block>
 
     <div class="technology">
-        <div class="technology_title">
+        <div class="technology_title" id="section">
             <div class="container">
-                <div layout="row" layout-align=" start end">
-                    <h2>{{'technology' | translate}}</h2>
+                <div layout="row" layout-align="center">
+                    <h2 class="main_title"><span>{{'technology' | translate}}</span>{{'technology' | translate}}</h2>
+
                 </div>
+                <div>  <p>{{"technology_subtitle" | translate}}</p></div>
             </div>
         </div>
         <div class="technology_main">
             <div class="container">
-                <div class="technology_main_title">
-                    <p>{{"technology_subtitle" | translate}}</p>
-                </div>
                 <div class="technology_main_body" layout="row" layout-wrap layout-align="space-around center">
                     <div class="technology_main_item" ng-repeat="technology in vm.tech">
-                        <div layout="row" layout-align="space-between center">
+                        <div layout="row" layout-align="center center">
                             <h4>{{technology.title | translate}}</h4>
-                            <img src="{{technology.link}}" alt="">
+                            <!--<img src="{{technology.link}}" alt="">-->
                         </div>
                         <p>{{technology.text | translate}}</p>
 
@@ -32,58 +31,58 @@
                 <h3>{{'technology_list_title' | translate}}</h3>
                 <div class="technology_item">
 
-                    <button class="accordion"><img src="{{vm.features[0].link}}" alt="">{{vm.features[0].title | translate}}</button>
+                    <button class="accordion"><img src="{{vm.features[0].link}}" alt="">{{vm.features[0].title | translate}}<i class="fas fa-angle-down"></i></button>
                     <div class="panel">
                         <p>{{vm.features[0].text | translate}}</p>
                     </div>
 
 
-                    <button class="accordion"><img src="{{vm.features[1].link}}" alt="">{{vm.features[1].title | translate}}</button>
+                    <button class="accordion"><img src="{{vm.features[1].link}}" alt="">{{vm.features[1].title | translate}}<i class="fas fa-angle-down"></i></button>
                     <div class="panel">
                         <p>{{vm.features[1].text | translate}}</p>
                     </div>
 
-                    <button class="accordion"><img src="{{vm.features[2].link}}" alt="">{{vm.features[2].title | translate}}</button>
+                    <button class="accordion"><img src="{{vm.features[2].link}}" alt="">{{vm.features[2].title | translate}}<i class="fas fa-angle-down"></i></button>
                     <div class="panel">
                         <p>{{vm.features[2].text | translate}}</p>
                     </div>
 
-                    <button class="accordion"><img src="{{vm.features[3].link}}" alt="">{{vm.features[3].title | translate}}</button>
+                    <button class="accordion"><img src="{{vm.features[3].link}}" alt="">{{vm.features[3].title | translate}}<i class="fas fa-angle-down"></i></button>
                     <div class="panel">
                         <p>{{vm.features[3].text | translate}}</p>
                     </div>
 
-                    <button class="accordion"><img src="{{vm.features[4].link}}" alt="">{{vm.features[4].title | translate}}</button>
+                    <button class="accordion"><img src="{{vm.features[4].link}}" alt="">{{vm.features[4].title | translate}}<i class="fas fa-angle-down"></i></button>
                     <div class="panel">
                         <p>{{vm.features[4].text | translate}}</p>
                     </div>
 
-                    <button class="accordion"><img src="{{vm.features[5].link}}" alt="">{{vm.features[5].title | translate}}</button>
+                    <button class="accordion"><img src="{{vm.features[5].link}}" alt="">{{vm.features[5].title | translate}}<i class="fas fa-angle-down"></i></button>
                     <div class="panel">
                         <p>{{vm.features[5].text | translate}}</p>
                     </div>
 
-                    <button class="accordion"><img src="{{vm.features[6].link}}" alt="">{{vm.features[6].title | translate}}</button>
+                    <button class="accordion"><img src="{{vm.features[6].link}}" alt="">{{vm.features[6].title | translate}}<i class="fas fa-angle-down"></i></button>
                     <div class="panel">
                         <p>{{vm.features[6].text | translate}}</p>
                     </div>
 
-                    <button class="accordion"><img src="{{vm.features[7].link}}" alt="">{{vm.features[7].title | translate}}</button>
+                    <button class="accordion"><img src="{{vm.features[7].link}}" alt="">{{vm.features[7].title | translate}}<i class="fas fa-angle-down"></i></button>
                     <div class="panel">
                         <p>{{vm.features[7].text | translate}}</p>
                     </div>
 
-                    <button class="accordion"><img src="{{vm.features[8].link}}" alt="">{{vm.features[8].title | translate}}</button>
+                    <button class="accordion"><img src="{{vm.features[8].link}}" alt="">{{vm.features[8].title | translate}}<i class="fas fa-angle-down"></i></button>
                     <div class="panel">
                         <p>{{vm.features[8].text | translate}}</p>
                     </div>
 
-                    <button class="accordion"><img src="{{vm.features[9].link}}" alt="">{{vm.features[9].title | translate}}</button>
+                    <button class="accordion"><img src="{{vm.features[9].link}}" alt="">{{vm.features[9].title | translate}}<i class="fas fa-angle-down"></i></button>
                     <div class="panel">
                         <p>{{vm.features[9].text | translate}}</p>
                     </div>
 
-                    <button class="accordion"><img src="{{vm.features[10].link}}" alt="">{{vm.features[10].title | translate}}</button>
+                    <button class="accordion"><img src="{{vm.features[10].link}}" alt="">{{vm.features[10].title | translate}}<i class="fas fa-angle-down"></i></button>
                     <div class="panel">
                         <p>{{vm.features[10].text | translate}}</p>
                     </div>

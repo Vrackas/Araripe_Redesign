@@ -129,12 +129,16 @@
               left: 0; }
         #homepage .homepage .solution .container .solution_body .solution_item:nth-child(1) {
           background-image: url("../../content/img/solutions/card_1.png");
-          background-size: cover; }
+          background-size: auto;
+          background-position: center;
+          background-repeat: no-repeat; }
           #homepage .homepage .solution .container .solution_body .solution_item:nth-child(1) .solution_body_item {
             z-index: 3; }
         #homepage .homepage .solution .container .solution_body .solution_item:nth-child(2) {
           background-image: url("../../content/img/solutions/card_2.png");
-          background-size: cover; }
+          background-size: auto;
+          background-position: center;
+          background-repeat: no-repeat; }
           #homepage .homepage .solution .container .solution_body .solution_item:nth-child(2) .solution_body_item {
             z-index: 4; }
         #homepage .homepage .solution .container .solution_body .solution_item:nth-child(1):hover {
@@ -755,99 +759,117 @@
   width: 100%;
   height: 100%; }
   #technology .technology_title {
+    max-width: 4000px;
+    margin: 0 auto;
     padding-top: 116px;
-    height: 280px;
+    height: 640px;
     width: 100%;
-    background: linear-gradient(130deg, #ff0037 0%, #e92084 100%);
+    background-image: url("../../content/img/technology/technology_bg.png");
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: center;
     position: relative;
     z-index: 1; }
     #technology .technology_title .container {
       height: 100%; }
       #technology .technology_title .container div {
-        height: 100%; }
+        height: 50%;
+        position: relative;
+        text-align: center; }
         #technology .technology_title .container div h2 {
           color: #ffffff;
-          font-size: 65px;
-          font-weight: 300;
-          letter-spacing: 4px;
-          margin-left: 50px; }
-  #technology .technology_main {
-    position: relative;
-    background-image: linear-gradient(122deg, #ff0037 0%, #e92084 100%); }
-    #technology .technology_main .container {
-      width: 960px; }
-      #technology .technology_main .container .technology_main_title {
-        padding-top: 100px;
-        padding-bottom: 150px; }
-        #technology .technology_main .container .technology_main_title p {
-          width: 66.66667%;
-          font-size: 20px;
-          line-height: 32px;
-          font-family: "Merriweather", serif;
-          font-weight: 300;
+          font-size: 55px;
+          text-transform: uppercase;
+          letter-spacing: 4px; }
+        #technology .technology_title .container div p {
+          width: 615px;
+          color: #ffffff;
+          font-size: 18px;
+          font-family: "Raleway", sans-serif;
           font-style: italic;
-          color: #97a3b4;
-          margin: 0;
-          z-index: 1;
-          position: relative; }
-      #technology .technology_main .container .technology_main_body {
-        overflow: hidden;
-        padding-bottom: 100px; }
-        #technology .technology_main .container .technology_main_body .technology_main_item {
-          box-sizing: border-box;
-          width: 460px;
-          height: 440px;
-          background: white;
-          margin: 10px 0;
-          z-index: 1;
-          position: relative;
-          padding: 40px;
-          box-shadow: 0 5px 10px 0 rgba(22, 108, 183, 0.15); }
-          #technology .technology_main .container .technology_main_body .technology_main_item div {
-            min-height: 50px;
-            margin-bottom: 20px;
-            padding-bottom: 14px;
-            border-bottom: 1px solid #ebeef0; }
-            #technology .technology_main .container .technology_main_body .technology_main_item div h4 {
-              line-height: 40px;
-              font-size: 32px;
-              font-family: "Roboto", sans-serif;
-              font-weight: 300;
-              color: #384656;
-              margin: 0; }
-          #technology .technology_main .container .technology_main_body .technology_main_item p {
-            color: #384656;
-            font-size: 15px;
-            line-height: 26px; }
-      #technology .technology_main .container .technology_main_body:before {
-        content: '';
-        height: 500px;
-        position: absolute;
-        top: -120px;
-        left: 0;
-        right: 0;
-        background: #fff;
-        -ms-transform: skew(0, -10deg);
-        transform: skew(0, -10deg);
-        z-index: 0; }
+          text-align: left;
+          margin-top: 100px; }
+  #technology .technology_main {
+    position: relative; }
+    #technology .technology_main .container .technology_main_title {
+      padding-top: 100px;
+      padding-bottom: 150px; }
+      #technology .technology_main .container .technology_main_title p {
+        width: 66.66667%;
+        font-size: 20px;
+        line-height: 32px;
+        font-family: "Merriweather", serif;
+        font-weight: 300;
+        font-style: italic;
+        color: #97a3b4;
+        margin: 0;
+        z-index: 1;
+        position: relative; }
+    #technology .technology_main .container .technology_main_body {
+      overflow: hidden;
+      padding: 30px 12px;
+      padding-bottom: 100px; }
+      #technology .technology_main .container .technology_main_body .technology_main_item {
+        box-sizing: border-box;
+        width: 550px;
+        height: 450px;
+        background: white;
+        margin: 10px 0;
+        z-index: 1;
+        position: relative;
+        padding: 40px;
+        border-radius: 25px;
+        box-shadow: 0px 0px 25.8px 17.2px rgba(0, 0, 0, 0.08); }
+        #technology .technology_main .container .technology_main_body .technology_main_item div {
+          min-height: 150px;
+          text-align: center;
+          background-size: auto;
+          background-position: center;
+          background-repeat: no-repeat; }
+          #technology .technology_main .container .technology_main_body .technology_main_item div h4 {
+            line-height: 40px;
+            font-size: 48px;
+            font-family: "Raleway", sans-serif;
+            font-weight: 600;
+            color: #fd4c55;
+            margin: 0; }
+        #technology .technology_main .container .technology_main_body .technology_main_item p {
+          font-family: "Raleway", sans-serif;
+          font-weight: 400;
+          color: #303030;
+          font-size: 18px;
+          line-height: 26px; }
+      #technology .technology_main .container .technology_main_body .technology_main_item:nth-child(1) div {
+        background-image: url("../../content/img/technology/internet.png"); }
+      #technology .technology_main .container .technology_main_body .technology_main_item:nth-child(2) div {
+        background-image: url("../../content/img/technology/lock.png"); }
+      #technology .technology_main .container .technology_main_body .technology_main_item:nth-child(3) div {
+        background-image: url("../../content/img/technology/puzzle.png"); }
+      #technology .technology_main .container .technology_main_body .technology_main_item:nth-child(4) div {
+        background-image: url("../../content/img/technology/chain.png"); }
   #technology .technology_list {
-    background: #f0f3f5;
+    background-image: url("../../content/img/technology/technology_list_bg.png");
+    background-size: cover;
+    background-position: center;
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 150px;
     padding-bottom: 120px; }
     #technology .technology_list .container h3 {
       line-height: 56px;
       font-size: 48px;
-      font-family: "Roboto", sans-serif;
-      font-weight: 300;
+      font-family: "Raleway", sans-serif;
+      font-weight: 600;
+      text-align: center;
       display: block;
-      color: #384656;
+      color: #ffffff;
       margin: 0;
-      padding: 50px 0 50px 100px; }
+      padding: 50px 0 50px; }
     #technology .technology_list .container .technology_item {
       width: 1000px;
       margin: 0 auto; }
       #technology .technology_list .container .technology_item .accordion {
-        background-color: #ffffff;
-        color: #384656;
+        background-color: rgba(0, 0, 0, 0.2);
+        color: #ffffff;
         cursor: pointer;
         padding: 30px;
         padding-left: 90px;
@@ -855,10 +877,11 @@
         margin: 50px auto 0;
         border: none;
         text-align: left;
+        border-radius: 65px;
         outline: none;
-        transition: 0.6s;
-        box-shadow: 0 5px 10px 0 rgba(22, 108, 183, 0.15);
-        font-family: 'Roboto', sans-serif;
+        transition: 0.6s all;
+        transition-delay: .4s  !important;
+        font-family: 'Raleway', sans-serif;
         font-weight: 300;
         line-height: 40px;
         font-size: 32px;
@@ -868,25 +891,49 @@
           height: 40px;
           position: absolute;
           margin-left: -50px; }
+        #technology .technology_list .container .technology_item .accordion i {
+          float: right;
+          font-size: 50px;
+          line-height: 40px;
+          transition: .5s all; }
+      #technology .technology_list .container .technology_item .active {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        transition: 0.05s border-radius;
+        transition-delay: 0s !important; }
+        #technology .technology_list .container .technology_item .active i {
+          transform: rotateX(180deg); }
       #technology .technology_list .container .technology_item .active, #technology .technology_list .container .technology_item .accordion:hover {
         font-size: 33px; }
       #technology .technology_list .container .technology_item .panel {
         box-sizing: border-box;
         width: 1000px;
-        padding: 0 18px;
-        padding-left: 90px;
-        background-color: white;
+        padding: 0 60px;
+        background-color: rgba(0, 0, 0, 0.2);
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.5s ease-out; }
+        transition: max-height 0.5s ease-out;
+        border-bottom-right-radius: 65px;
+        border-bottom-left-radius: 65px; }
         #technology .technology_list .container .technology_item .panel p {
-          width: 600px;
           padding: 30px 0;
           margin-bottom: 30px;
-          border-bottom: 1px solid #ebeef0;
           font-size: 18px;
+          font-family: "Raleway", sans-serif;
+          font-weight: 400;
           line-height: 30px;
-          color: #384656; }
+          color: #ffffff; }
+
+@keyframes accordion {
+  0% {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px; }
+  30% {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px; }
+  100% {
+    border-bottom-right-radius: 65px;
+    border-bottom-left-radius: 65px; } }
   @media (min-width: 992px) and (max-width: 1200px) {
     #technology .technology_list .container .technology_item {
       width: 900px; }
@@ -906,35 +953,52 @@
   @media (min-width: 540px) and (max-width: 768px) {
     #technology .container {
       width: 530px !important; }
-    #technology .technology_list .container .technology_item {
-      width: 530px; }
-      #technology .technology_list .container .technology_item .accordion {
+    #technology .technology_title p {
+      width: initial !important;
+      margin-top: 0 !important; }
+    #technology .technology_list {
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 0px; }
+      #technology .technology_list .container .technology_item {
         width: 530px; }
-      #technology .technology_list .container .technology_item .panel {
-        width: 530px;
-        padding-left: 18px; }
-        #technology .technology_list .container .technology_item .panel p {
-          width: auto; } }
+        #technology .technology_list .container .technology_item .accordion {
+          width: 530px; }
+        #technology .technology_list .container .technology_item .panel {
+          width: 530px;
+          padding-left: 18px; }
+          #technology .technology_list .container .technology_item .panel p {
+            width: auto; } }
   @media (max-width: 540px) {
     #technology .container {
       width: 300px !important; }
     #technology .technology_title h2 {
       letter-spacing: 1px !important;
-      font-size: 54px !important;
+      font-size: 40px !important;
       margin-left: 0 !important; }
+    #technology .technology_title p {
+      width: initial !important;
+      margin-top: 0 !important; }
     #technology .technology_main .container .technology_main_body .technology_main_item {
+      box-shadow: 0px 0px 25.8px 0.2px rgba(0, 0, 0, 0.08);
       height: auto; }
+      #technology .technology_main .container .technology_main_body .technology_main_item div h4 {
+        font-size: 33px; }
+      #technology .technology_main .container .technology_main_body .technology_main_item p {
+        text-align: justify; }
     #technology .technology_main .container .technology_main_body:before {
       height: 750px; }
-    #technology .technology_list .container .technology_item {
-      width: 300px; }
-      #technology .technology_list .container .technology_item .accordion {
+    #technology .technology_list {
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 0px; }
+      #technology .technology_list .container .technology_item {
         width: 300px; }
-      #technology .technology_list .container .technology_item .panel {
-        width: 300px;
-        padding-left: 18px; }
-        #technology .technology_list .container .technology_item .panel p {
-          width: auto; } }
+        #technology .technology_list .container .technology_item .accordion {
+          width: 300px; }
+        #technology .technology_list .container .technology_item .panel {
+          width: 300px;
+          padding-left: 18px; }
+          #technology .technology_list .container .technology_item .panel p {
+            width: auto; } }
 
 #merchant_account {
   font-family: 'Roboto', sans-serif; }
@@ -1133,6 +1197,8 @@
   width: 100%;
   height: 100%; }
   #about .about_title {
+    max-width: 4000px;
+    margin: 0 auto;
     padding-top: 116px;
     height: 640px;
     width: 100%;
@@ -1237,11 +1303,13 @@
         #about .about_map .container .about_map_value .about_map_value_item p {
           margin: 0; }
   #about .about_value {
+    max-width: 2400px;
+    margin: 0 auto;
     border-top-left-radius: 200px;
     border-bottom-right-radius: 200px;
-    background-size: auto;
-    background-color: #5d6364;
-    background-position: top;
+    background-image: url("../../content/img/about/about_bg.png");
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 700px; }
     #about .about_value .container h3 {
@@ -1323,85 +1391,209 @@
   color: #384656;
   width: 100%;
   height: 100%; }
-  #contact .contact {
-    padding-bottom: 150px; }
-    #contact .contact .contact_title {
-      padding-top: 116px;
-      height: 280px;
-      width: 100%;
-      background: linear-gradient(130deg, #ff0037 0%, #e92084 100%);
-      position: relative;
-      z-index: 1; }
-      #contact .contact .contact_title .container {
-        height: 100%; }
-        #contact .contact .contact_title .container div {
-          height: 100%; }
-          #contact .contact .contact_title .container div h2 {
-            color: #ffffff;
-            font-size: 65px;
-            font-weight: 300;
-            letter-spacing: 4px;
-            margin-left: 50px; }
-    #contact .contact .container h3 {
-      line-height: 40px;
-      font-size: 32px;
-      font-family: "Roboto", sans-serif;
-      font-weight: 300; }
-    #contact .contact .container .contact_phones > div {
-      width: 470px;
-      margin-right: 10px; }
-      #contact .contact .container .contact_phones > div h3 {
-        border-bottom: 1px solid #ebeef0;
-        padding: 20px 0;
-        padding-top: 100px; }
-      #contact .contact .container .contact_phones > div a {
-        margin: 15px 0; }
-      #contact .contact .container .contact_phones > div .contact_phones_mail a {
-        color: #384656;
-        text-decoration: none;
-        margin-right: 20px; }
-      #contact .contact .container .contact_phones > div .contact_phones_phone a {
-        color: #384656;
-        text-decoration: none;
-        margin: 5px 0; }
-    #contact .contact .container .contact_pay {
-      margin-top: 100px;
-      padding-bottom: 100px; }
-      #contact .contact .container .contact_pay h3 {
-        border-bottom: 1px solid #ebeef0;
-        padding: 20px 0; }
-      #contact .contact .container .contact_pay .contact_pay_item {
-        margin: 15px; }
-        #contact .contact .container .contact_pay .contact_pay_item h4 {
-          font-size: 18px;
-          line-height: 32px;
-          font-family: "Merriweather", serif;
-          font-weight: 300;
-          font-style: italic;
-          margin: 0; }
-        #contact .contact .container .contact_pay .contact_pay_item a {
-          color: #384656;
+  #contact .contact .contact_title {
+    max-width: 4000px;
+    margin: 0 auto 300px;
+    padding-top: 116px;
+    height: 1350px;
+    width: 100%;
+    background-image: url("../../content/img/contact_bg.png");
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: center;
+    position: relative;
+    z-index: 1;
+    border-bottom-left-radius: 30px; }
+    #contact .contact .contact_title .container {
+      height: 100%;
+      color: white; }
+      #contact .contact .contact_title .container div {
+        text-align: center; }
+        #contact .contact .contact_title .container div h2 {
+          color: #ffffff;
+          font-size: 55px;
+          text-transform: uppercase;
+          letter-spacing: 4px; }
+      #contact .contact .contact_title .container .contact_block {
+        position: relative; }
+        #contact .contact .contact_title .container .contact_block a {
+          font-family: "Raleway", sans-serif;
+          font-size: 24px;
+          color: white;
+          float: left;
           text-decoration: none;
-          cursor: pointer;
-          font-size: 16px;
-          line-height: 26px; }
-    #contact .contact .container .contact_marketing h3 {
-      border-bottom: 1px solid #ebeef0;
-      padding: 20px 0; }
-    #contact .contact .container .contact_marketing a {
-      color: #384656;
-      text-decoration: none;
-      cursor: pointer;
-      font-size: 16px;
-      line-height: 26px; }
-  @media (min-width: 768px) and (max-width: 992px) {
-    #contact .container .contact_phones > div {
+          transition: .8s all; }
+          #contact .contact .contact_title .container .contact_block a i {
+            margin-right: 10px; }
+        #contact .contact .contact_title .container .contact_block a:hover {
+          color: #ff5252;
+          text-decoration: underline; }
+        #contact .contact .contact_title .container .contact_block .contact_phones, #contact .contact .contact_title .container .contact_block .contact_marketing, #contact .contact .contact_title .container .contact_block .contact_pay {
+          width: 450px;
+          float: left; }
+          #contact .contact .contact_title .container .contact_block .contact_phones h3, #contact .contact .contact_title .container .contact_block .contact_marketing h3, #contact .contact .contact_title .container .contact_block .contact_pay h3 {
+            text-align: left; }
+          #contact .contact .contact_title .container .contact_block .contact_phones div, #contact .contact .contact_title .container .contact_block .contact_marketing div, #contact .contact .contact_title .container .contact_block .contact_pay div {
+            text-align: left !important; }
+            #contact .contact .contact_title .container .contact_block .contact_phones div h4, #contact .contact .contact_title .container .contact_block .contact_marketing div h4, #contact .contact .contact_title .container .contact_block .contact_pay div h4 {
+              font-family: "Raleway", sans-serif;
+              font-style: italic;
+              font-size: 24px;
+              font-weight: 200;
+              margin: 20px 0 0; }
+        #contact .contact .contact_title .container .contact_block .contact_form {
+          background: white;
+          position: absolute;
+          bottom: -400px;
+          color: #303030;
+          right: 0;
+          border-bottom-right-radius: 45px;
+          border-top-left-radius: 45px;
+          height: 1050px;
+          width: 590px;
+          box-shadow: 0px 0px 25.8px 17.2px rgba(0, 0, 0, 0.08);
+          text-align: left; }
+          #contact .contact .contact_title .container .contact_block .contact_form h4 {
+            font-size: 30px;
+            font-weight: bold;
+            font-family: "Raleway", sans-serif;
+            padding: 0 40px; }
+          #contact .contact .contact_title .container .contact_block .contact_form p {
+            width: 400px;
+            font-family: "Raleway", sans-serif;
+            font-style: italic;
+            font-size: 16px;
+            font-weight: 200;
+            padding: 0 40px; }
+          #contact .contact .contact_title .container .contact_block .contact_form form {
+            align-items: center; }
+            #contact .contact .contact_title .container .contact_block .contact_form form md-input-container {
+              margin: 16px 0; }
+            #contact .contact .contact_title .container .contact_block .contact_form form md-input-container:last-child {
+              margin-top: 0 !important; }
+            #contact .contact .contact_title .container .contact_block .contact_form form .md-errors-spacer {
+              display: none; }
+            #contact .contact .contact_title .container .contact_block .contact_form form label {
+              transform: translate3d(0, 36px, 0) scale(1);
+              padding-left: 25px;
+              display: none; }
+            #contact .contact .contact_title .container .contact_block .contact_form form input, #contact .contact .contact_title .container .contact_block .contact_form form textarea {
+              width: 500px;
+              border-top-left-radius: 20px;
+              border-bottom-right-radius: 20px;
+              border: 1px solid #ff5252;
+              height: 70px;
+              outline: none;
+              font-family: "Raleway", sans-serif;
+              font-weight: 200;
+              font-size: 30px;
+              padding-left: 15px;
+              margin: 0 auto; }
+            #contact .contact .contact_title .container .contact_block .contact_form form textarea {
+              height: 200px;
+              margin-top: -12px; }
+            #contact .contact .contact_title .container .contact_block .contact_form form button {
+              width: 500px; }
+  #contact .contact .container h3 {
+    line-height: 40px;
+    font-size: 32px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    #contact .contact .contact_title .container .contact_block .contact_phones, #contact .contact .contact_title .container .contact_block .contact_marketing, #contact .contact .contact_title .container .contact_block .contact_pay {
       width: 350px !important; } }
+  @media (min-width: 768px) and (max-width: 992px) {
+    #contact .contact .contact_title {
+      margin: 0;
+      height: auto; }
+      #contact .contact .contact_title .container .contact_block {
+        padding-bottom: 100px;
+        flex-wrap: wrap;
+        justify-content: center; }
+        #contact .contact .contact_title .container .contact_block .contact_phones, #contact .contact .contact_title .container .contact_block .contact_marketing, #contact .contact .contact_title .container .contact_block .contact_pay {
+          text-align: center !important;
+          margin: 0 auto;
+          float: initial;
+          align-items: center; }
+          #contact .contact .contact_title .container .contact_block .contact_phones div, #contact .contact .contact_title .container .contact_block .contact_marketing div, #contact .contact .contact_title .container .contact_block .contact_pay div {
+            text-align: center !important;
+            align-items: center;
+            justify-content: center; }
+        #contact .contact .contact_title .container .contact_block .contact_marketing {
+          padding-bottom: 50px; }
+          #contact .contact .contact_title .container .contact_block .contact_marketing h3 {
+            text-align: center; }
+          #contact .contact .contact_title .container .contact_block .contact_marketing a {
+            float: initial; }
+        #contact .contact .contact_title .container .contact_block .contact_form {
+          position: initial; } }
+  @media (min-width: 540px) and (max-width: 768px) {
+    #contact .contact .contact_title {
+      margin: 0;
+      height: auto; }
+      #contact .contact .contact_title .container .contact_block {
+        padding-bottom: 100px;
+        flex-wrap: wrap;
+        justify-content: center; }
+        #contact .contact .contact_title .container .contact_block .contact_phones, #contact .contact .contact_title .container .contact_block .contact_marketing, #contact .contact .contact_title .container .contact_block .contact_pay {
+          text-align: center !important;
+          margin: 0 auto;
+          float: initial;
+          align-items: center; }
+          #contact .contact .contact_title .container .contact_block .contact_phones div, #contact .contact .contact_title .container .contact_block .contact_marketing div, #contact .contact .contact_title .container .contact_block .contact_pay div {
+            text-align: center !important;
+            align-items: center;
+            justify-content: center; }
+        #contact .contact .contact_title .container .contact_block .contact_marketing {
+          padding-bottom: 50px; }
+          #contact .contact .contact_title .container .contact_block .contact_marketing h3 {
+            text-align: center; }
+          #contact .contact .contact_title .container .contact_block .contact_marketing a {
+            float: initial; }
+        #contact .contact .contact_title .container .contact_block .contact_form {
+          position: initial; } }
   @media (max-width: 540px) {
     #contact .contact_title h2 {
       letter-spacing: 1px !important;
       font-size: 54px !important;
-      margin-left: 0 !important; } }
+      margin-left: 0 !important; }
+    #contact .contact .contact_title {
+      margin: 0;
+      height: auto; }
+      #contact .contact .contact_title .container .contact_block {
+        padding-bottom: 100px;
+        flex-wrap: wrap;
+        justify-content: center; }
+        #contact .contact .contact_title .container .contact_block .contact_phones, #contact .contact .contact_title .container .contact_block .contact_marketing, #contact .contact .contact_title .container .contact_block .contact_pay {
+          width: 300px;
+          text-align: center !important;
+          margin: 0 auto;
+          float: initial;
+          align-items: center; }
+          #contact .contact .contact_title .container .contact_block .contact_phones a, #contact .contact .contact_title .container .contact_block .contact_marketing a, #contact .contact .contact_title .container .contact_block .contact_pay a {
+            font-size: 20px !important; }
+          #contact .contact .contact_title .container .contact_block .contact_phones h3, #contact .contact .contact_title .container .contact_block .contact_marketing h3, #contact .contact .contact_title .container .contact_block .contact_pay h3 {
+            text-align: center !important; }
+          #contact .contact .contact_title .container .contact_block .contact_phones div, #contact .contact .contact_title .container .contact_block .contact_marketing div, #contact .contact .contact_title .container .contact_block .contact_pay div {
+            text-align: center !important;
+            align-items: center;
+            justify-content: center; }
+        #contact .contact .contact_title .container .contact_block .contact_marketing {
+          padding-bottom: 50px; }
+          #contact .contact .contact_title .container .contact_block .contact_marketing h3 {
+            text-align: center; }
+          #contact .contact .contact_title .container .contact_block .contact_marketing a {
+            float: initial; }
+        #contact .contact .contact_title .container .contact_block .contact_form {
+          position: initial;
+          width: 300px;
+          text-align: center; }
+          #contact .contact .contact_title .container .contact_block .contact_form h4, #contact .contact .contact_title .container .contact_block .contact_form p {
+            padding: 0 5px; }
+          #contact .contact .contact_title .container .contact_block .contact_form p {
+            width: 280px; }
+          #contact .contact .contact_title .container .contact_block .contact_form form input, #contact .contact .contact_title .container .contact_block .contact_form form textarea, #contact .contact .contact_title .container .contact_block .contact_form form button {
+            width: 280px; } }
 
 #terms {
   background-color: #ffffff;

@@ -196,7 +196,9 @@
             //left: 23%;
             background: {
               image: url("../../content/img/solutions/card_1.png");
-              size: cover;
+              size: auto;
+              position: center;
+              repeat: no-repeat;
             }
           ;
             .solution_body_item {
@@ -208,8 +210,9 @@
             //margin-top: 10px;
             background: {
               image: url("../../content/img/solutions/card_2.png");
-              size: cover;
-
+              size: auto;
+              position: center;
+              repeat: no-repeat;
             }
           ;
             .solution_body_item {

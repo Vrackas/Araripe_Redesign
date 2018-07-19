@@ -9,6 +9,8 @@
   width: 100%;
   height: 100%;
   .about_title {
+    max-width: 4000px;
+    margin: 0 auto;
     padding-top: 116px;
     height: 640px;
     width: 100%;
@@ -164,13 +166,15 @@
     }
   }
   .about_value {
+    max-width: 2400px;
+    margin: 0 auto;
     border-top-left-radius: 200px;
     border-bottom-right-radius: 200px;
     background: {
-      //image: url("../../content/img/about/internet.png");
-      size: auto;
-      color: #5d6364;
-      position: top;
+      image: url("../../content/img/about/about_bg.png");
+      size: cover;
+      //color: #5d6364;
+      position: center;
       repeat: no-repeat;
     }
     height: 700px;

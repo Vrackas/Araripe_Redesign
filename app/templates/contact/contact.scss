@@ -7,28 +7,157 @@
   width: 100%;
   height: 100%;
   .contact {
-    padding-bottom: 150px;
     .contact_title {
+      max-width: 4000px;
+      margin: 0 auto 300px;
       padding-top: 116px;
-      height: 280px;
+      height: 1350px;
       width: 100%;
-      background: linear-gradient(130deg, #ff0037 0%, #e92084 100%);
+      background: {
+        image: url("../../content/img/contact_bg.png");
+        size: cover;
+        position-y: bottom;
+        position-x: center;
+      }
       position: relative;
       z-index: 1;
+      border-bottom-left-radius: 30px;
       .container {
         height: 100%;
+        color: white;
         div {
-          height: 100%;
+          //height:;
+          text-align: center;
           h2 {
             color: #ffffff;
             font: {
-              size: 65px;
-              weight: 300;
+              size: 55px;
+              //weight: 300;
             }
+            text-transform: uppercase;
             letter-spacing: 4px;
-            margin-left: 50px;;
+            //margin-left: 50px;;
           }
         }
+        .contact_block {
+          position: relative;
+          a {
+            font: {
+              family: "Raleway", sans-serif;
+              size: 24px;
+            }
+            color: white;
+            float: left;
+            text-decoration: none;
+            transition: .8s all;
+            i {
+              margin-right: 10px;
+            }
+          }
+          a:hover {
+            color: #ff5252;
+            text-decoration: underline;
+          }
+          .contact_phones, .contact_marketing, .contact_pay {
+
+            width: 450px;
+            float: left;
+            h3 {
+              text-align: left;
+            }
+            div {
+              text-align: left !important;
+              h4 {
+                font: {
+                  family: "Raleway", sans-serif;
+                  style: italic;
+                  size: 24px;
+                  weight: 200;
+                }
+              ;
+                margin: 20px 0 0;
+              }
+              //h4:first-child{
+              //  margin: 0;
+              //}
+            }
+
+          }
+          .contact_form {
+            background: white;
+            position: absolute;
+            bottom: -400px;
+            color: #303030;
+            right: 0;
+            border-bottom-right-radius: 45px;
+            border-top-left-radius: 45px;
+            height: 1050px;
+            width: 590px;
+            box-shadow: 0px 0px 25.8px 17.2px rgba(0, 0, 0, 0.08);
+            text-align: left;
+            h4{
+              font: {
+                size: 30px;
+                weight: bold;
+                family: "Raleway", sans-serif;
+              };
+              padding: 0 40px;
+            }
+            p{
+              width: 400px;
+              font: {
+                family: "Raleway", sans-serif;
+                style: italic;
+                size: 16px;
+                weight: 200;
+
+              };
+              padding: 0 40px;
+            }
+            form{
+              align-items:center;
+              md-input-container{
+                margin: 16px 0;
+              }
+              md-input-container:last-child{
+                margin-top:  0 !important;
+              }
+
+              .md-errors-spacer{
+                display: none;
+              }
+              label{
+                transform: translate3d(0, 36px, 0) scale(1);
+                padding-left: 25px;
+                display: none;
+              }
+              input, textarea{
+                width: 500px;
+                border-top-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                border: 1px solid #ff5252;
+                height: 70px;
+                outline: none;
+                font:{
+                  family: "Raleway", sans-serif;
+                  weight: 200;
+                  size: 30px;
+                }
+                padding-left: 15px;
+                margin: 0 auto;
+              }
+              textarea{
+                height: 200px;
+                margin-top: -12px;
+              }
+              button{
+                width: 500px;
+              }
+            }
+
+          }
+        }
+
       }
     }
     .container {
@@ -37,75 +166,6 @@
         font-size: 32px;
         font-family: "Roboto", sans-serif;
         font-weight: 300;
-      }
-
-      .contact_phones > div {
-        width: 470px;
-        margin-right: 10px;
-        h3 {
-          border-bottom: 1px solid #ebeef0;
-          padding: 20px 0;
-          padding-top: 100px;
-        }
-        a {
-          margin: 15px 0;
-        }
-        .contact_phones_mail {
-          a {
-            color: #384656;
-            text-decoration: none;
-            margin-right: 20px;
-          }
-        }
-        .contact_phones_phone {
-          a {
-            color: #384656;
-            text-decoration: none;
-            margin: 5px 0;
-            //margin-right: 20px;
-          }
-
-        }
-      }
-      .contact_pay {
-        margin-top: 100px;
-        padding-bottom: 100px;
-        h3 {
-          border-bottom: 1px solid #ebeef0;
-          padding: 20px 0;
-
-        }
-        .contact_pay_item {
-          margin: 15px;
-          h4 {
-            font-size: 18px;
-            line-height: 32px;
-            font-family: "Merriweather", serif;
-            font-weight: 300;
-            font-style: italic;
-            margin: 0;
-          }
-          a {
-            color: #384656;
-            text-decoration: none;
-            cursor: pointer;
-            font-size: 16px;
-            line-height: 26px;
-          }
-        }
-      }
-      .contact_marketing{
-        h3{
-          border-bottom: 1px solid #ebeef0;
-          padding: 20px 0;
-        }
-        a {
-          color: #384656;
-          text-decoration: none;
-          cursor: pointer;
-          font-size: 16px;
-          line-height: 26px;
-        }
       }
     }
   }
@@ -121,19 +181,110 @@
   }
 
   @media (min-width: 992px) and (max-width: 1200px) {
+    .contact {
+      .contact_title {
+        .container {
+          .contact_block {
+            .contact_phones, .contact_marketing, .contact_pay {
 
+              width: 350px !important;
+
+            }
+          }
+        }
+
+      }
+    }
   }
 
   @media (min-width: 768px) and (max-width: 992px) {
-    .container {
-      .contact_phones > div {
-        width: 350px !important;
+    .contact {
+      .contact_title {
+        margin: 0;
+        height: auto;
+        .container {
+          .contact_block {
+            padding-bottom: 100px;
+            flex-wrap: wrap;
+            justify-content: center;
+            .contact_phones, .contact_marketing, .contact_pay{
+              text-align: center !important;
+              margin: 0 auto;
+              float: initial;
+              align-items: center;
+              div{
+                text-align: center !important;
+                align-items: center;
+                justify-content: center;
+                div{
+
+                }
+              }
+            }
+            .contact_marketing{
+              padding-bottom: 50px;
+             h3{
+               text-align: center;
+             }
+             a{
+               float: initial;
+
+             }
+            }
+            .contact_form {
+              position: initial;
+
+            }
+          }
+        }
+
       }
     }
   }
 
   @media (min-width: 540px) and (max-width: 768px) {
+    .contact {
+      .contact_title {
+        margin: 0;
+        height: auto;
+        .container {
+          .contact_block {
+            padding-bottom: 100px;
+            flex-wrap: wrap;
+            justify-content: center;
+            .contact_phones, .contact_marketing, .contact_pay{
+              text-align: center !important;
+              margin: 0 auto;
+              float: initial;
+              align-items: center;
+              div{
+                text-align: center !important;
+                align-items: center;
+                justify-content: center;
+                div{
 
+                }
+              }
+            }
+            .contact_marketing{
+              padding-bottom: 50px;
+              h3{
+                text-align: center;
+              }
+              a{
+                float: initial;
+
+              }
+            }
+            .contact_form {
+              position: initial;
+
+            }
+          }
+        }
+
+      }
+    }
   }
 
   @media (max-width: 540px) {
@@ -144,6 +295,69 @@
         margin-left: 0 !important;
       }
 
+    }
+    .contact {
+      .contact_title {
+        margin: 0;
+        height: auto;
+        .container {
+          .contact_block {
+            padding-bottom: 100px;
+            flex-wrap: wrap;
+            justify-content: center;
+            .contact_phones, .contact_marketing, .contact_pay{
+              width: 300px;
+              text-align: center !important;
+              margin: 0 auto;
+              float: initial;
+              align-items: center;
+              a{
+                font-size: 20px !important;
+              }
+              h3{
+                text-align: center !important;
+              }
+              div{
+                text-align: center !important;
+                align-items: center;
+                justify-content: center;
+                div{
+
+                }
+              }
+            }
+            .contact_marketing{
+              padding-bottom: 50px;
+              h3{
+                text-align: center;
+              }
+              a{
+                float: initial;
+
+              }
+            }
+            .contact_form {
+              position: initial;
+              width: 300px;
+              text-align: center;
+              h4, p{
+                padding: 0 5px;
+              }
+
+              p{
+                width: 280px;
+              }
+              form{
+                input, textarea, button{
+                  width: 280px;
+                }
+              }
+
+            }
+          }
+        }
+
+      }
     }
   }
 
