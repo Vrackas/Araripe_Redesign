@@ -1,10 +1,13 @@
 <div id="login" layout="row">
-    <div class="login_sidebar" layout="row" layout-align="center center">
-        <img src="content/img/Logo_header.png" ui-sref="home" alt="">
+    <div class="login_sidebar" >
+        <div layout="row" layout-align="center center">
+            <img src="content/img/Logo_header.png" ui-sref="home" alt="">
+        </div>
+
     </div>
-    <div class="login_block">
-        <div class="form_block" layout="column" layout-align="center center">
-            <h2>Login</h2>
+    <div class="login_block" layout="row" layout-align="center center">
+        <div class="form_block" layout="column" layout-align="space-between center">
+            <h2 class="main_title"><span>Login</span>Login</h2>
             <form class="form_login" name="loginForm" novalidate>
 
                 <md-input-container class="md-block" md-no-float>
