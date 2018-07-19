@@ -3,74 +3,136 @@
 
     <div class="prices_title" id="section">
         <div class="container">
-            <div layout="row" layout-align=" start end">
-                <h2>{{"prices_title" | translate }}</h2>
+            <div layout="row" layout-align="center">
+                <h2 class="main_title"><span>{{"prices_title" | translate }}</span>{{"prices_title" | translate }}</h2>
+            </div>
+
+            <div class="prices_body">
+                <div layout="row" layout-align="space-between center">
+                    <div class="block_text">
+                        <h4>{{'prices_text1' | translate}}</h4>
+                        <p>{{'prices_text2' | translate}}</p>
+                        <ul>
+                            <li>
+                                <p>{{'prices_list1_text1' | translate}}</p>
+                            </li>
+                            <li>
+                                <p>{{'prices_list1_text2' | translate}}</p>
+                            </li>
+                            <li>
+                                <p>{{'prices_list1_text3' | translate}}</p>
+                            </li>
+                        </ul>
+                        <p>{{'prices_text3' | translate}}</p>
+                    </div>
+                    <div><img src="content/img/price_pay.png" alt=""></div>
+                </div>
+                <div class="block_text large"    ><h4>{{'prices_text4' | translate}}</h4>
+                    <ul>
+                        <li>
+                            <p>{{'prices_list2_text1' | translate}}</p>
+                        </li>
+                        <li>
+                            <p>{{'prices_list2_text2' | translate}}</p>
+                        </li>
+                        <li>
+                            <p>{{'prices_list2_text3' | translate}}</p>
+                        </li>
+                        <li>
+                            <p>{{'prices_list2_text4' | translate}}</p>
+                        </li>
+                    </ul>
+
+                    <p>{{'prices_text5' | translate}}</p>
+                    <p>{{'prices_text6' | translate}}</p>
+
+                    <p>{{'prices_text7' | translate}}</p></div>
+                <div layout="row" style="position: relative">
+                    <div layout="column">
+                        <div class="block_text">
+                            <h4>{{'prices_text8' | translate}}</h4>
+                            <ul>
+                                <li>
+                                    <p>{{'prices_list3_text1' | translate}}</p>
+                                </li>
+                                <li>
+                                    <p>{{'prices_list3_text2' | translate}}</p>
+                                </li>
+                            </ul>
+
+
+
+                        </div>
+                        <div class="block_text">
+                            <h4>{{'prices_text9' | translate}}</h4>
+                            <p>{{'prices_text10' | translate}}</p>
+                            <p>{{'prices_text11' | translate}}</p>
+
+                            <p>{{'prices_text12' | translate}}</p>
+
+                        </div>
+                    </div>
+                    <div class="contact_form">
+                        <h4>Say something</h4>
+                        <p>To start working with us, fill in the feedback form
+                            to open your merchant account
+                            and take advantages of the many benefits Araripe
+                            can provide your customers.</p>
+                        <form class="form-contact" name="contactForm" novalidate layout="column" layout-align="center start">
+
+                            <md-input-container class="md-block" md-no-float>
+                                <input type="text" name="name" placeholder="Name" md-autofocus ng-model="vm.form.name">
+                            </md-input-container>
+
+                            <md-input-container class="md-block" md-no-float>
+                                <input type="text" name="companyName" placeholder="Company name" ng-model="vm.form.companyName">
+                            </md-input-container>
+
+                            <md-input-container class="md-block" md-no-float>
+                                <input type="text" name="link" placeholder="Web site" ng-model="vm.form.link">
+                            </md-input-container>
+
+                            <md-input-container class="md-block" md-no-float>
+                                <input type="text" name="phone" placeholder="Phone" ng-model="vm.form.phone">
+                            </md-input-container>
+
+
+                            <md-input-container class="md-block" md-no-float>
+                                <input type="text" name="theme" placeholder="Theme" ng-model="vm.form.theme">
+                            </md-input-container>
+
+
+                            <md-input-container  md-no-float>
+                                <label> </label>
+                                <textarea md-no-resize  name="message" placeholder="Message"  id="" cols="30" rows="5" ng-model="vm.form.message"></textarea>
+                            </md-input-container>
+
+
+
+                            <div id="button-register" class="button-log__in ">
+                                <button ng-click="vm.sendContact(contactForm)"
+                                        ng-disabled="contactForm.$invalid || contactForm.$pristine"
+                                        class="main_button primary">
+                                    {{'contact_form_button' | translate}}
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="prices_body">
-            <div class="container">
-
-                <p>{{'prices_text1' | translate}}</p>
-                <p>{{'prices_text2' | translate}}</p>
-                <ul>
-                    <li>
-                        <p>{{'prices_list1_text1' | translate}}</p>
-                    </li>
-                    <li>
-                        <p>{{'prices_list1_text2' | translate}}</p>
-                    </li>
-                    <li>
-                        <p>{{'prices_list1_text3' | translate}}</p>
-                    </li>
-                </ul>
-                <p>{{'prices_text3' | translate}}</p>
-
-                <p>{{'prices_text4' | translate}}</p>
-                <ul>
-                    <li>
-                        <p>{{'prices_list2_text1' | translate}}</p>
-                    </li>
-                    <li>
-                        <p>{{'prices_list2_text2' | translate}}</p>
-                    </li>
-                    <li>
-                        <p>{{'prices_list2_text3' | translate}}</p>
-                    </li>
-                    <li>
-                        <p>{{'prices_list2_text4' | translate}}</p>
-                    </li>
-                </ul>
-
-                <p>{{'prices_text5' | translate}}</p>
-                <p>{{'prices_text6' | translate}}</p>
-
-                <p>{{'prices_text7' | translate}}</p>
-
-                <p>{{'prices_text8' | translate}}</p>
-                <ul>
-                    <li>
-                        <p>{{'prices_list3_text1' | translate}}</p>
-                    </li>
-                    <li>
-                        <p>{{'prices_list3_text2' | translate}}</p>
-                    </li>
-                </ul>
-
-                <p>{{'prices_text9' | translate}}</p>
-                <p>{{'prices_text10' | translate}}</p>
-                <p>{{'prices_text11' | translate}}</p>
-
-                <p>{{'prices_text12' | translate}}</p>
+        <div class="container">
 
 
 
 
 
-            </div>
+        </div>
     </div>
 
-    <contact-form></contact-form>
+    <!--<contact-form></contact-form>-->
 
     <logo-block></logo-block>
 
